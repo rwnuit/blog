@@ -13,8 +13,8 @@ themesDir = "./themes/"
 title = "RWnuit"
 
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
-# 设置默认的语言 ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = "zh-cn"
+
 # language code ["en", "zh-CN", "fr", "pl", ...]
 # 网站语言, 仅在这里 CN 大写 ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "en"
@@ -52,7 +52,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 # Author config
 # 作者配置
 [author]
-  name = "homer"
+  name = "RWnuit"
   email = "zhen-zhao@msn.com"
   link = ""
 
@@ -135,7 +135,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       name = "RWnuit"
       # you can add extra information before the name (HTML format is supported), such as icons
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
-      pre = "<i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i>"
+      pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
       # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
       post = ""
@@ -243,9 +243,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # 是否在搜索索引中使用基于 baseURL 的绝对路径
     absoluteURL = false
     [params.search.algolia]
-      index = ""
-      appID = ""
-      searchKey = ""
+      index = "rwnuit"
+      appID = "3UAJ0HKRX6"
+      searchKey = "af5606a74ac6f085b22e002fc972a837"
 
   # Home page config
   # 主页信息设置
@@ -259,22 +259,22 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       enable = true
       # Gravatar Email for preferred avatar in home page
       # Gravatar 邮箱，用于优先在主页显示的头像
-      gravatarEmail = ""
+      gravatarEmail = "zhen-zha0@msn.com"
       # URL of avatar shown in home page
       # 主页显示头像的 URL
-      avatarURL = "/images/avatar.png"
+      avatarURL = ""
       # title shown in home page (HTML format is supported)
       # 主页显示的网站标题 (支持 HTML 格式)
       title = ""
       # subtitle shown in home page (HTML format is supported)
       # 主页显示的网站副标题 (允许 HTML 格式)
-      subtitle = "RWnuit的个人站点"
+      subtitle = "Homer的个人站点"
       # whether to use typeit animation for subtitle
       # 是否为副标题显示打字机动画
       typeit = true
       # whether to show social links
       # 是否显示社交账号
-      social = true
+      social = false
       # disclaimer (HTML format is supported)
       # 免责声明 (支持 HTML 格式)
       disclaimer = ""
@@ -417,7 +417,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # KaTeX mathematical formulas config (KaTeX https://katex.org/)
     # KaTeX 数学公式配置 (KaTeX https://katex.org/)
     [params.page.math]
-      enable = false
+      enable = true
       # default inline delimiter is $ ... $ and \( ... \)
       # 默认行内定界符是 $ ... $ 和 \( ... \)
       inlineLeftDelimiter = ""
@@ -466,7 +466,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       Whatsapp = false
       Pinterest = false
       Tumblr = false
-      HackerNews = true
+      HackerNews = false
       Reddit = false
       VK = false
       Buffer = false
@@ -506,8 +506,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Valine 评论系统设置 (https://github.com/xCss/Valine)
       [params.page.comment.valine]
         enable = true
-        appId = "QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI"
-        appKey = "WBmoGyJtbqUswvfLh6L8iEBr"
+        appId = "h1hf6Epqfm0iaBAOLX4lH8NO-gzGzoHsz"
+        appKey = "UpYAbCVvaoT3AOkitZyTAjfa"
         placeholder = ""
         avatar = "mp"
         meta= ""
@@ -609,7 +609,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # 出版者信息
       [params.page.seo.publisher]
         name = "xxxx"
-        logoUrl = "/images/avatar.png"
+        logoUrl = ""
 
   # TypeIt config
   # TypeIt 配置
@@ -836,14 +836,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         name = "About"
         url = "/about/"
         title = ""
-      [[languages.en.menu.main]]
-        weight = 6
-        identifier = "github"
-        pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
-        post = ""
-        name = ""
-        url = "https://github.com/dillonzq/LoveIt"
-        title = "GitHub"
     [languages.en.params]
       [languages.en.params.search]
         enable = true
@@ -855,33 +847,31 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         highlightTag = "em"
         absoluteURL = false
         [languages.en.params.search.algolia]
-          index = "index.en"
-          appID = "PASDMWALPK"
-          searchKey = "b42948e51daaa93df92381c8e2ac0f93"
+          index = "rwnuit"
+          appID = "3UAJ0HKRX6"
+          searchKey = "af5606a74ac6f085b22e002fc972a837"
       [languages.en.params.home]
         rss = 10
         [languages.en.params.home.profile]
           enable = true
           gravatarEmail = ""
-          avatarURL = "/images/avatar.png"
+          avatarURL = ""
           title = ""
-          subtitle = "RWnuit's personal website"
+          subtitle = "Homer@rwnuit's personal website"
           typeit = true
           social = true
           disclaimer = ""
       [languages.en.params.social]
-        GitHub = "xxxx"
-        Twitter = "xxxx"
-        Instagram = "xxxx"
-        Facebook = "xxxx"
-        Telegram = "xxxx"
-        Youtubelegacy = "xxxx"
-        Phone = "555-555-555"
-        Email = "xxxx@xxxx.com"
+        GitHub = "rwnuit"
+        Twitter = ""
+        Instagram = ""
+        Facebook = ""
+        Telegram = ""
+        Youtubelegacy = ""
+        Phone = ""
+        Email = "zhen-zhao@msn.com"
         RSS = true
-        [languages.en.params.social.Mastodon]
-          id = "@xxxx"
-          prefix = "https://mastodon.technology/"
+        
 
   [languages.zh-cn]
     weight = 2
@@ -929,14 +919,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         name = "关于"
         url = "/about/"
         title = ""
-      [[languages.zh-cn.menu.main]]
-        weight = 6
-        identifier = "github"
-        pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
-        post = ""
-        name = ""
-        url = "https://github.com/dillonzq/LoveIt"
-        title = "GitHub"
+      
     [languages.zh-cn.params]
       [languages.zh-cn.params.search]
         enable = true
@@ -948,28 +931,28 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         highlightTag = "em"
         absoluteURL = false
         [languages.zh-cn.params.search.algolia]
-          index = "index.zh-cn"
-          appID = "PASDMWALPK"
-          searchKey = "b42948e51daaa93df92381c8e2ac0f93"
+          index = "rwnuit"
+          appID = "3UAJ0HKRX6"
+          searchKey = "af5606a74ac6f085b22e002fc972a837"
       [languages.zh-cn.params.home]
         rss = 10
         [languages.zh-cn.params.home.profile]
           enable = true
           gravatarEmail = ""
-          avatarURL = "/images/avatar.png"
+          avatarURL = ""
           title = ""
-          subtitle = "RWnuit的个人站点"
+          subtitle = "Homer@rwnuit的个人站点"
           typeit = true
           social = true
           disclaimer = ""
       [languages.zh-cn.params.social]
-        GitHub = "xxxx"
-        Weibo = "xxxx"
-        Steam = "xxxx"
-        Zhihu = "xxxx"
-        Douban = "xxxx"
-        Devto = "xxxx"
-        Bilibili = "xxxx"
-        Email = "xxxx@xxxx.com"
-        Phone = "555-555-555"
+        GitHub = "rwnuit"
+        Weibo = ""
+        Steam = ""
+        Zhihu = ""
+        Douban = ""
+        Devto = ""
+        Bilibili = ""
+        Email = "zhen-zhao@msn.com"
+        Phone = ""
         RSS = true
